@@ -5,7 +5,7 @@ public final static int NUM_COL = 50;
 private Life[][] buttons; //2d array of Life buttons each representing one cell
 private boolean[][] buffer; //2d array of booleans to store state of buttons array
 private boolean running = true; //used to start and stop program
-public int size = 800; 
+public int size1 = 800; 
 
 public void setup () {
   size(800, 800);
@@ -60,10 +60,10 @@ public void keyPressed() {
   running = !running;
   }
    if (key == 'a'){
-  size =size-100;
+  size1 =size1-100;
   }
    if (key == 'd'){
-  size =size+100;
+  size1 =size1+100;
   }
 }
 
@@ -130,8 +130,8 @@ public class Life {
   private boolean alive;
 
   public Life (int row, int col) {
-    width = size/NUM_COL;
-    height = size/NUM_ROWS;
+    width = size1/NUM_COL;
+    height = size1/NUM_ROWS;
     myRow = row;
     myCol = col; 
     x = myCol*width;
